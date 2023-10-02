@@ -42,6 +42,7 @@ class AppPayment {
   }
 }''';
 
+// TODO: Change merchant details
   static String applePayConfig = '''{
   "provider": "apple_pay",
   "data": {
