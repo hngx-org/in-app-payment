@@ -1,26 +1,24 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:in_app_payment/configurations/payment_config.dart';
 import 'package:pay/pay.dart';
 
 class HNGPay {
+  /// Displays a google pay button on Android device to handle payment
   googlePay({required String amountToPay}) {
-    return Container(
-      child: GooglePayButton(
-          loadingIndicator: const CircularProgressIndicator(),
-          paymentConfiguration:
-              PaymentConfiguration.fromJsonString(AppPayment.googlePayConfig),
-          onPaymentResult: (result) {
-            debugPrint(result.toString());
-            //TODO : also send to backend
-          },
-          paymentItems: [
-            PaymentItem(
-                amount: amountToPay, status: PaymentItemStatus.final_price)
-          ]),
-    );
+    return GooglePayButton(
+        loadingIndicator: const CircularProgressIndicator(),
+        paymentConfiguration:
+            PaymentConfiguration.fromJsonString(AppPayment.googlePayConfig),
+        onPaymentResult: (result) {
+          //TODO : also send to backend
+        },
+        paymentItems: [
+          PaymentItem(
+              amount: amountToPay, status: PaymentItemStatus.final_price)
+        ]);
   }
 
+  /// Displays an apple pay button on IOS device to handle payment
   applePay({required String amountToPay}) {
     return ApplePayButton(
       loadingIndicator: const CircularProgressIndicator(),
@@ -33,7 +31,6 @@ class HNGPay {
         ),
       ],
       onPaymentResult: (result) {
-        debugPrint(result.toString());
         // TODO: Send the result to the backend.
       },
     );
