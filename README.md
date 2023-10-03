@@ -107,7 +107,7 @@ This snippet assumes the existence a payment configuration
 
 ## Additional information
 
-TODO: Tell users more about the package: where to find more information, how to
+Tell users more about the package: where to find more information, how to
 contribute to the package, how to file issues, what response they can expect
 from the package authors, and more.
 
@@ -115,4 +115,4 @@ from the package authors, and more.
 
 
 
-==Note: This is not the final release as we can't process payment now. We would be updating as we progress==
+Note: This is not the final release as we can't process payment now. We would be updating as we progress
