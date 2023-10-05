@@ -1,6 +1,7 @@
 name: in_app_payment
-description: In app payment package
-version: 0.0.1
+description: In app payment package for the stage 6 task of the HNGx Internship. This package would 
+  enable flutter developers make payments through google pay and apple pay in their application.
+version: 0.0.2
 homepage: https://github.com/hngx-org/in-app-payment.git
 
 environment:

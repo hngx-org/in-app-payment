@@ -1,10 +1,4 @@
 # This is a generated file; do not edit or check into version control.
-<<<<<<< HEAD
-pay=/home/zacchaeus/.pub-cache/hosted/pub.dev/pay-1.1.2/
-pay_android=/home/zacchaeus/.pub-cache/hosted/pub.dev/pay_android-1.0.11/
-pay_ios=/home/zacchaeus/.pub-cache/hosted/pub.dev/pay_ios-1.0.9/
-=======
-pay=C:\\Users\\REAZY\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\pay-1.1.2\\
-pay_android=C:\\Users\\REAZY\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\pay_android-1.0.11\\
-pay_ios=C:\\Users\\REAZY\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\pay_ios-1.0.9\\
->>>>>>> ef2384c66f66e13310369bc38a581e67fb81d91c
+pay=C:\\Users\\hp\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\pay-1.1.2\\
+pay_android=C:\\Users\\hp\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\pay_android-1.0.11\\
+pay_ios=C:\\Users\\hp\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\pay_ios-1.0.9\\

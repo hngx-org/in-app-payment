@@ -2,8 +2,11 @@
 // account and an apple pay merchant account
 
 class AppPayment {
+  //class to hold the configuration details
   AppPayment._();
 
+  ///configuration details for google pay
+  //TODO: change merchant details
   static String googlePayConfig = '''{
   "provider": "google_pay",
   "data": {
@@ -42,6 +45,7 @@ class AppPayment {
   }
 }''';
 
+  //configuration for apple pay
 // TODO: Change merchant details
   static String applePayConfig = '''{
   "provider": "apple_pay",
