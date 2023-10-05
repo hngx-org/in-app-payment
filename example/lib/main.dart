@@ -31,6 +31,7 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
+  ///initializing payment package
   final pay = HNGPay();
 
   @override
@@ -41,8 +42,10 @@ class _MyHomePageState extends State<MyHomePage> {
         title: Text("Payment test"),
       ),
       body: Center(
-        child: Container(
-          child: pay.googlePay(amountToPay: "24"),
+        child: SizedBox(
+          child: pay.googlePay(context, amountToPay: "24", userID: '23'),
+
+          /// accepting the amount and user id
         ),
       ),
     );
