@@ -108,6 +108,3 @@ This snippet assumes the existence a payment configuration
 - [Rayhan Awojobi](https://github.com/dexterousnorthpaw)
 - [Ridwan Lawal](https://github.com/Reazy-ai)
 - [Zaccheus Oluwole](https://github.com/Zacchaeus-Oluwole)
-
-
-Note: This is not the final release as we can't process payment now. We would be updating as we progress
