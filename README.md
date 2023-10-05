@@ -31,7 +31,7 @@ This package helps to integrate Google pay and Apple pay into your app.
    To start using this plugin, add `in_app_payment` as a [dependency in your pubspec.yaml file](https://flutter.io/platform-plugins/):
    ```yaml
    dependencies:
-   in_app_payment: ^0.0.1
+   in_app_payment: ^0.0.2
    ```
 
 2. Initialize HNGPay:
@@ -41,11 +41,11 @@ This package helps to integrate Google pay and Apple pay into your app.
 
 3. For Android, invoke the googlePay function in place of your 'pay' button in your app and pass the amount to be paid as argument.
    ```dart
-   pay.googlePay("12");
+   pay.googlePay(context, amountToPay: "24", userID: '23')
    ```
 4. For IOS, invoke the applePay function in place of your 'pay' button in your app and pass the amount to be paid as argument.
     ```dart
-    pay.applePay('12');
+    pay.applePay(context, amountToPay: "24", userID: '23'),
     ```
 
 ### Example
@@ -95,8 +95,7 @@ This snippet assumes the existence a payment configuration
          ),
          body: Center(
            child: Container(
-             child: pay.googlePay(amountToPay: "24"), //for android implementaion
-             //child : pay.applePay(amountToPay: "24"); for iOS implementation
+             child: pay.googlePay(context, amountToPay: "24", userID: '23'), //for android implementaion
            ),
          ),
        );
@@ -105,14 +104,10 @@ This snippet assumes the existence a payment configuration
    
    ```
 
-## Additional information
-
-Tell users more about the package: where to find more information, how to
-contribute to the package, how to file issues, what response they can expect
-from the package authors, and more.
-
----
-
+## Authors
+- [Rayhan Awojobi](https://github.com/dexterousnorthpaw)
+- [Ridwan Lawal](https://github.com/Reazy-ai)
+- [Zaccheus Oluwole](https://github.com/Zacchaeus-Oluwole)
 
 
 Note: This is not the final release as we can't process payment now. We would be updating as we progress
